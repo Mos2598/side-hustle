@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    background-color:lightblue;
+}
+body {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    
+}
+
+main {
+    width: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color:white;  
+}
+
+p {
+    font-size: 16px;
+}
+
+.img {
+    width: 450px;
+    height: 220px;
+    background: url("illustration-hero.svg");
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+.summary {
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+.summary h1 {
+    font-weight: 900;
+    background-color:white;
+}
+
+.summary p {
+    text-align: center;
+    line-height: 24px;
+    background-color:white;
+}
+
+.payment {
+    width: 80%;
+    margin: 30px 0 30px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon {
+    width: 48px;
+    height: 48px;
+    background: url("images/icon-music.svg");   
+}
+
+#price {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:white;
+}
+
+#price p {
+    margin: 0;
+    padding: 0 0 0 10px;
+    line-height: 24px;
+    background-color:white;
+}
+
+#price p:first-child, #link a {
+    font-weight: 700;
+}
+
+#link a {
+    color:darkblue;
+    background-color:white;
+}
+
+.btn {
+    width: 100%;
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+button {
+    margin: 20px;
+    background-color:white;
+}
+
+#pay {
+    width: 80%;
+    height: 48px;
+    border-radius: 10px;
+    background-color: darkblue;
+    border-color: darkblue;
+    color: white;
+    box-shadow: 0 10px 15px grey;
+}
+#pay:hover {
+    background-color: blue;
+    border-color: blue;
+}
+
+#link a:hover {
+    color: blue;
+}
+#cancel {
+    color:darkblue;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+}
+
+#cancel:hover {
+    color: blue;
+    background-color:white;
+
+}
+
+.attribution { 
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center;
+    background-color:white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    background-color:white;
+
+}
+
+@media (max-width: 375px) {
+    
+    body {
+        width: 375px;
+        background: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+        
+    }
+
+    main {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .summary {
+        margin: 20px 0 20px 0;
+    }
+    
+    
+    
+    
+    
+    .payment {
+        width: 90%;
+        margin: 20px 0 20px 0;
+        padding: 5px 10px;
+    }
+    #price {
+        flex-grow: 1;
+    }
+    
+    
+    .btn {
+        width: 80%;
+        margin: 20px 0 20px 0;
+    }
+
+}
